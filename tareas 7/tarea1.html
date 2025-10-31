@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partes de cuerpo </title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <h1> cuerpo </h1>
+    <p> dice que:</p>
+    <p><span id="cuerpo"></span></p>
+    
+    <!--p id = "hola"></p-->
+    
+    <!--script src = "prueba1.js"></script>-->
+
+    <script>
+        //busca el archivo json
+        fetch('cuerpo.json')
+        //se hace una promesa de que se va a obtener la informacion del archivo JSON 
+        .then(response=>response.json())
+        .then(json=>{
+            //se obtiene la informacion de arrays de acciones y partes pero se busca uno en especifico
+            document.getElementById("cuerpo").innerHTML=json.acciones[0] + " " + json.partes[0] +" "+ json.lado[0];
+            console.log(json);
+        })
+
+    </script>
+
+</body>
+</html>
