@@ -2,6 +2,7 @@
 # Jose Eduardo Garcia Nieto
 <p>Producción y comunicación en la cultura colaborativa,
 Artes y comunicacion digitales</p>
+
 ## Objetivo del repositorio
 El objetivo de este repositorio es centralizar, organizar y documentar todas las tareas, prácticas y proyectos desarrollados durante la unidad de programación. Su propósito principal es proporcionar un espacio estructurado donde cada actividad pueda consultarse, revisarse y evaluarse de manera clara y accesible. A través de este repositorio, se busca fomentar buenas prácticas en el manejo de código, incluyendo el uso de control de versiones, documentación adecuada y un orden lógico en la presentación de los avances.
 
