@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>colores</title>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+    <p id = "nam"></p>
+    <script>
+        const supabasePublicClient = supabase.createClient("https://axnbqlxihsohftxnsxvj.supabase.co", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImF4bmJxbHhpaHNvaGZ0eG5zeHZqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjQ4ODE3OTEsImV4cCI6MjA4MDQ1Nzc5MX0.eA0CWKOIwwJACdw9FN0ITQrQmJDlWfdwVDupbdskNSQ",{
+            db:{ schema: "public"}
+        });
+
+        (async () => {
+            const response = await supabasePublicClient.from("tabla1"). select ("colores")
+            console.log (response)
+            document.getElementById("nam").innerHTML= JSON.stringify (response, null,2);
+        } ) ()
+    </script>
+
+</body>
+</html>
